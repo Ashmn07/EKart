@@ -97,7 +97,7 @@ export const Slider:React.FC = () => {
             </Arrow>
             <Wrapper slideIndex={slideIndex}>
                 {sliderItems?.map((item:sliderItem) => (
-                    <Slide bag={item.bg}>
+                    <Slide bag={item.bg} key={item.id}>
                     <ImgContainer>
                         <Image src={item.img}/>
                     </ImgContainer>
